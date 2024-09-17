@@ -114,6 +114,7 @@ nav a:hover {
     text-align: center;
     font-size: 1em;
     z-index: 1;
+    color: var(--secondary-color);
 }
 
 main {
@@ -189,6 +190,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     margin: 0 auto;
+    padding-top: 1em;
 }
 
 footer p {
