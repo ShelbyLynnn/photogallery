@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+
+  /* CSS Reset End   */
+/* Root Styles */
+
+:root {
+    --font-family: 'Arial', Helvetica, sans-serif;
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --accent-color: #007d7b;
+  }
+
+/* Global Styles - Small First */
+body {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+nav {
+    padding: 2em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 10px 0 0px 0px;
+    background-color: #000;
+}
+
+main {
+    background-color: var(--secondary-color);
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-top: 1em;
+}
+
+figure {
+    position: relative;
+}
+
+figure img {
+    z-index: 1;
+}
+
+figcaption {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+}
+
+.fig-a {
+    color: var(--secondary-color);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+}
+
+.fig-b {
+    color: var(--secondary-color);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    top: 1em;
+    left: 0;
+    right: 0;
+}
+
+.fig-c {
+    color: var(--primary-color);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    top: 1em;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    width: 80%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 2em;
+    text-transform: uppercase;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+}
+
+form input {
+    background-color: var(--secondary-color);
+    padding: .6em;
+}
+
+label {
+    padding-top: 1em;
+}
+
+form ::placeholder{
+    color: var(--accent-color);
+}
+
+#submit {
+    margin: 2em auto;
+    text-align: center;
+    width: 50%;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border-radius: 2em;
+}
