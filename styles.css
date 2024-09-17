@@ -99,12 +99,21 @@ nav a {
     text-transform: uppercase;
 }
 
+nav a:hover {
+    color: var(--accent-color);
+}
+
 [href="#top"] {
     position: fixed;
     bottom: 0px;
     right: 0px;
     border-radius: 10px 0 0px 0px;
     background-color: #000;
+    width: 3em;
+    border: var(--secondary-color) 1px solid;
+    text-align: center;
+    font-size: 1em;
+    z-index: 1;
 }
 
 main {
@@ -117,15 +126,18 @@ main {
 #images {
     display: grid;
     grid-template-columns: 1fr;
-    place-items: center;
     padding-top: 1em;
+    place-items: center;
 }
 
 figure {
     position: relative;
+    place-items: center;
 }
 
 figure img {
+    width: 100%;
+    height: auto;
     z-index: 1;
 }
 
@@ -212,4 +224,24 @@ form ::placeholder{
     background-color: var(--accent-color);
     color: var(--secondary-color);
     border-radius: 2em;
+}
+
+/* Screen Size 880px */
+
+@media (min-width: 880px) {
+    #images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Screen Size 1300px */
+
+@media (min-width: 1300px) {
+    #images {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+    nav ul {
+        justify-content: right;
+    }
 }
